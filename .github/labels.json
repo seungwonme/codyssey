@@ -1,0 +1,57 @@
+[
+  {
+    "name": "feature",
+    "color": "#50FA7B",
+    "description": "새로운 기능 추가"
+  },
+  {
+    "name": "fix",
+    "color": "#FF5555",
+    "description": "버그 수정"
+  },
+  {
+    "name": "refactor",
+    "color": "#FF79C6",
+    "description": "기능 변화 없이 코드 구조 재구성 및 리팩토링"
+  },
+  {
+    "name": "chore",
+    "color": "#BD93F9",
+    "description": "코드 수정 없이 패키지 매니저 설정 변경"
+  },
+  {
+    "name": "style",
+    "color": "#F1FA8C",
+    "description": "코드 로직 영향 없는 스타일 변경 (whitespace, formatting 등)"
+  },
+  {
+    "name": "build",
+    "color": "#FFB86C",
+    "description": "시스템 또는 외부 종속성 변경 (npm, yarn)"
+  },
+  {
+    "name": "test",
+    "color": "#69FF94",
+    "description": "기존 테스트 수정 및 누락된 테스트 추가"
+  },
+  {
+    "name": "documentation",
+    "color": "#6272A4",
+    "description": "문서 변경"
+  },
+  {
+    "name": "ci",
+    "color": "#8BE9FD",
+    "description": "CI 구성파일 및 스크립트 변경"
+  },
+  {
+    "name": "performance",
+    "color": "#9AEDFE",
+    "description": "성능 개선"
+  },
+  {
+    "name": "revert",
+    "color": "#FF6E6E",
+    "description": "작업 되돌리기 (커밋 꼬리말에 되돌린 SHA 추가)"
+  }
+]
