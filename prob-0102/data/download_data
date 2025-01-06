@@ -8,5 +8,3 @@ git clone https://github.com/lovit/kmrd
 
 # Netflix https://archive.org/details/nf_prize_dataset.tar
 curl -L -O https://archive.org/download/nf_prize_dataset.tar/nf_prize_dataset.tar.gz && tar -xzvf nf_prize_dataset.tar.gz
-
-
