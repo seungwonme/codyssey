@@ -11,6 +11,8 @@ pandas = "^2.2.3"
 seaborn = "^0.13.2"
 matplotlib = "^3.10.0"
 pre-commit = "^4.0.1"
+scipy = "^1.15.0"
+setuptools = "^75.7.0"
 
 
 [tool.poetry.group.dev.dependencies]

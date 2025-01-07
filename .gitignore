@@ -176,3 +176,5 @@ cython_debug/
 *.zip
 kmrd/
 ml-latest-small/
+*.patch
+*.log
