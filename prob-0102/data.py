@@ -27,7 +27,7 @@ class DB(Enum):
 
 
 def get_dataframes() -> List[pd.DataFrame]:
-    base_path = os.path.join(os.getcwd(), "data/kmrd/kmr_dataset/datafile/kmrd-small")
+    base_path = "../data/kmrd/kmr_dataset/datafile/kmrd-small"
     db_name = [
         "castings.csv",
         "countries.csv",
