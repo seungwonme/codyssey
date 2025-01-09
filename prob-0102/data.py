@@ -46,6 +46,7 @@ countries_df = dataframes[DB.COUNTRIES.value]
 genres_df = dataframes[DB.GENRES.value]
 rates_df = dataframes[DB.RATES.value]
 movies_df = dataframes[DB.MOVIES.value]
+peoples_df = dataframes[DB.PEOPLES.value]
 
 print("===========================castings_df===========================")
 print(castings_df.head())
@@ -57,42 +58,7 @@ print("===========================rates_df===========================")
 print(rates_df.head())
 print("===========================movies_df===========================")
 print(movies_df.head())
+print("===========================peoples_df===========================")
+print(peoples_df.head())
 
-
-merged_df = (
-    movies_df.merge(castings_df, on="movie", how="left")
-    .merge(countries_df, on="movie", how="left")
-    .merge(genres_df, on="movie", how="left")
-    .merge(rates_df[["movie", "rate", "user"]], on="movie", how="left")
-)
-
-# 필요한 컬럼만 선택하여 정리
-final_df = merged_df[[
-    "movie",
-    "title",
-    "year",
-    "grade",
-    "people",
-    "leading",
-    "country",
-    "genre",
-    "rate",
-    "user",
-]]
-
-# print(len(final_df))
-
-# # Merge 예제 (컬럼 기준)
-# merged_df = movies_df.merge(castings_df, on="movie", how="left")
-
-# # Join 예제 (인덱스 기준)
-# joined_df = movies_df.set_index("movie").join(castings_df.set_index("movie"))
-
-# print(merged_df.head())
-# print(joined_df.head())
-
-# cast_per_movie = castings_df.groupby("movie").size()
-# print(cast_per_movie.mean())
-
-merged_df = movies_df.merge(genres_df, on="movie", how="left")
-print(merged_df.head())
+# print(movies_df.tail(10))
